@@ -1,3 +1,9 @@
+.html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 !important;
+}
+
 .logo {
     padding-top: 20vh;
 }
@@ -7,14 +13,34 @@
     height: auto;
 }
 
+
+/*Topbar*/
+
+.top-nav {
+    text-align: right;
+    padding: 1.5rem 1rem 0 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 14px;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
 .logo,
 .search-bar,
-.submit-button {
+.submit-button,
+.offer {
     text-align: center;
 }
 
 .search-bar {
-    padding: 2rem;
+    padding: 2rem 0 1rem 0;
 }
 
 .search:focus {
@@ -25,20 +51,19 @@
 }
 
 input[type='text'] {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     padding-left: 15px;
 }
 
 .search {
-    width: 30vw;
+    width: 600px;
     height: 3rem;
     border-radius: 25px;
     border: .5px solid lightgray;
 }
 
 .search:hover {
-    box-shadow: 1px 1px 5px gray;
+    box-shadow: .5px .5px 5px lightgray;
 }
 
 .submit-btn,
@@ -51,10 +76,68 @@ input[type='text'] {
     border-radius: 5px;
     color: #5F6368;
     cursor: pointer;
-    font-family: arial, sans-serif;
 }
 
 .submit-btn:hover,
 .lucky-btn:hover {
     border: .5px solid lightgray;
+}
+
+.offer {
+    font-size: 12px;
+}
+
+.language {
+    text-decoration: none;
+}
+
+
+/*Bottom Bar*/
+
+.bottom-nav {
+    width: 100%;
+}
+
+.bottom-nav1,
+.bottom-nav2 {
+    box-sizing: border-box;
+    height: 2.5rem;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: .5px solid #e6e6e6;
+    position: absolute;
+}
+
+.bottom-nav1 {
+    bottom: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.bottom-nav1 p {
+    color: #5F6368;
+    font-size: 14px;
+    padding-left: 1rem;
+    height: 100%;
+    margin: 0;
+}
+
+.bottom-nav2 {
+    bottom: 0;
+    line-height: 2.5rem;
+}
+
+.bottom-nav2 a {
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 12px;
+    padding: 0 1rem 0 1rem;
+}
+
+.bottom-nav2 a:hover {
+    text-decoration: underline;
+}
+
+.bottom-nav2-right {
+    height: 100%;
+    float: right;
 }
